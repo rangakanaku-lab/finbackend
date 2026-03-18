@@ -11,7 +11,7 @@ router.get(`/`, async (req, res) => {
     if (user) {
       return res.send(user);
     } else {
-      return res.status(500).send("error in retrieve data");
+      return res.status(500).send("error in retrieve payData");
     }
   } catch (e) {
     return res.status(500).json({
